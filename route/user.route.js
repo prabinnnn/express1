@@ -12,4 +12,31 @@ router.post("/:id", (req, res, next) => {
     next(e);
   }
 });
+router.post("/:id", (req, res, next) => {
+  try {
+    const { id } = req.params;
+    if (!id) throw new ERROR("something is missing");
+    res.json({ msg: "hello from prabin" });
+  } catch (e) {
+    next(e);
+  }
+});
+router.post("/:id", (req, res, next) => {
+  try {
+    const { id } = req.params;
+    if (!id) throw new ERROR("something is missing");
+    res.json({ msg: "hello from prabin" });
+  } catch (e) {
+    next(e);
+  }
+});
+router.post("/:id", (req, res, next) => {
+  try {
+    const { id } = req.params;
+    if (!id) throw new ERROR("something is missing");
+    res.json({ msg: "hello from prabin" });
+  } catch (e) {
+    next(e);
+  }
+});
 module.exports = router;
